@@ -4,11 +4,10 @@ export default function App() {
 
 
     return (
-        <View> 
+        <View>
             <Text>OLA, APP!</Text>
-         </View>
-         
-        <Button title="clique aqui !"/>
+            <Button title="clique aqui !"/>
+        </View>
     )
 
 }
