@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
@@ -6,6 +6,7 @@ export default function App() {
 
     return (
         <SafeAreaView>
+            <StatusBar barStyle="dark-content"/>
             <Text>OLA, APP!</Text>
             <TouchableOpacity onPress={() => alert("clicado")}
                 style={{ backgroundColor: 'blue', padding: 10, marginTop: 30 , borderRadius: 5, alignItems: 'center', justifyContent: 'center' }}
