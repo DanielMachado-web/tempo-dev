@@ -1,4 +1,4 @@
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 export default function App() {
 
@@ -6,7 +6,9 @@ export default function App() {
     return (
         <View>
             <Text>OLA, APP!</Text>
-            <Button title="clique aqui !" onPress={() => alert("clicado")}/>
+            <TouchableOpacity onPress={() => alert("clicado")}>
+                <Text>clique aqui !</Text>
+            </TouchableOpacity>
         </View>
     )
 
