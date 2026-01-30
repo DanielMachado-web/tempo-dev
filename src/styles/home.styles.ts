@@ -1,10 +1,9 @@
 import {StyleSheet} from 'react-native';
-import {color, spacing, typography} from './src/styles/color';
+import { colors, spacing, typography} from './colors';
 
 export const homeStyles = StyleSheet.create({
 
-    
+
+});
 
 
-
-});    
