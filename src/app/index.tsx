@@ -1,4 +1,4 @@
-import { View, Text, StatusBar, StyleSheet } from 'react-native';
+import { View, Text, StatusBar, StyleSheet, ScrollView } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { homeStyles } from '../styles/home.styles';
 
@@ -12,16 +12,20 @@ export default function App() {
 
             <StatusBar barStyle="dark-content" />
 
-            <View style={homeStyles.header}>
-                <Text style={homeStyles.title}>TEMPO DEV</Text>
-                <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
-            </View>
+
+            <ScrollView style={homeStyles.container}>
+
+                <View style={homeStyles.header}>
+                    <Text style={homeStyles.title}>TEMPO DEV</Text>
+                    <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
+                </View>
 
 
-            <View>
-                <Text>clique aqui !</Text>
-            </View>
+                <View>
+                    <Text>Digite o nome de uma cidade</Text>
+                </View>
 
+            </ScrollView>
         </SafeAreaView>
     )
 
