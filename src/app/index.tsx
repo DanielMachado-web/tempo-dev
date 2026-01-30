@@ -5,29 +5,33 @@ export default function App() {
 
 
     return (
-        
+
         <SafeAreaView style={styles.container}>
-            <StatusBar barStyle="dark-content"/>
+
+            <StatusBar barStyle="dark-content" />
+
             <Text style={styles.title}>TEMPO DEV</Text>
-            <Text style={{color: '#fff'}}>App de previsão do tempo</Text>
-            <TouchableOpacity onPress={() => alert("clicado")}style={styles.button}>   
+            <Text style={{ color: '#fff' }}>App de previsão do tempo</Text>
+            
+            <TouchableOpacity onPress={() => alert("clicado")} style={styles.button}>
                 <Text>clique aqui !</Text>
             </TouchableOpacity>
+
         </SafeAreaView>
     )
 
 }
 
 const styles = StyleSheet.create({
-    container : {
-        flex: 1,    
+    container: {
+        flex: 1,
         backgroundColor: '#000',
         alignItems: 'center',
         padding: 20,
         justifyContent: 'center',
     },
 
-    title : {
+    title: {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#ffff',
@@ -35,7 +39,7 @@ const styles = StyleSheet.create({
 
     },
 
-    button : {
+    button: {
         backgroundColor: 'white',
         padding: 10,
         marginTop: 30,
