@@ -8,7 +8,7 @@ export default function App() {
         
         <SafeAreaView style={styles.container}>
             <StatusBar barStyle="dark-content"/>
-            <Text style={styles.title}>OLA, APP!</Text>
+            <Text style={styles.title}>TEMPO DEV</Text>
             <TouchableOpacity onPress={() => alert("clicado")}style={styles.button}>   
                 <Text>clique aqui !</Text>
             </TouchableOpacity>
