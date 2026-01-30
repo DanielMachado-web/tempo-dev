@@ -1,21 +1,21 @@
-import { View, Text, TouchableOpacity, StatusBar, StyleSheet } from 'react-native';
+import { View, Text, StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { homeStyles } from '../styles/home.styles';
+
 
 export default function App() {
 
 
     return (
 
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={homeStyles.safeArea}>
 
             <StatusBar barStyle="dark-content" />
 
-            <Text style={styles.title}>TEMPO DEV</Text>
-            <Text style={{ color: '#fff' }}>App de previsão do tempo</Text>
-            
-            <TouchableOpacity onPress={() => alert("clicado")} style={styles.button}>
-                <Text>clique aqui !</Text>
-            </TouchableOpacity>
+            <Text style={homeStyles.title}>TEMPO DEV</Text>
+            <Text style={homeStyles.subtitle}>App de previsão do tempo</Text>
+
+            <Text>clique aqui !</Text>
 
         </SafeAreaView>
     )
