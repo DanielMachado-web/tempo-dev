@@ -26,5 +26,12 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 20,
         justifyContent: 'center',
+    },
+
+    title :{
+        fontSize: 20,
+        fontWeight: 'bold',
+        color: '#ffff',
+
     }
 });
