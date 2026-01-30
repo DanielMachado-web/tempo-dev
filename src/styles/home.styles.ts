@@ -28,10 +28,7 @@ export const homeStyles = StyleSheet.create({
     },
 
     title: {
-        fontSize: typography.lg,
-        fontWeight: 'bold',
-        color: colors.textPrimary,
-        marginBottom: spacing.md,
+       ...typography.title,
     },
 
 
