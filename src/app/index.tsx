@@ -9,6 +9,7 @@ export default function App() {
         <SafeAreaView style={styles.container}>
             <StatusBar barStyle="dark-content"/>
             <Text style={styles.title}>TEMPO DEV</Text>
+            <Text style={{color: '#fff'}}>App de previsão do tempo</Text>
             <TouchableOpacity onPress={() => alert("clicado")}style={styles.button}>   
                 <Text>clique aqui !</Text>
             </TouchableOpacity>
