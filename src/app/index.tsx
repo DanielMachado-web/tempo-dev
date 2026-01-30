@@ -12,10 +12,15 @@ export default function App() {
 
             <StatusBar barStyle="dark-content" />
 
-            <Text style={homeStyles.title}>TEMPO DEV</Text>
-            <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
+            <View style={homeStyles.header}>
+                <Text style={homeStyles.title}>TEMPO DEV</Text>
+                <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
+            </View>
 
-            <Text>clique aqui !</Text>
+
+            <View>
+                <Text>clique aqui !</Text>
+            </View>
 
         </SafeAreaView>
     )
