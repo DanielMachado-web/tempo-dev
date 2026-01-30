@@ -11,12 +11,12 @@ export const homeStyles = StyleSheet.create({
         alignItems: 'center',
     },
 
-    container{
+    container : {
         flex: 1,
 
     },
 
-    header{
+    header: {
         flexDirection: 'row',
         justifyContent: 'space-between',
         alignItems: 'center',
