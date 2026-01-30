@@ -13,7 +13,7 @@ export default function App() {
             <StatusBar barStyle="dark-content" />
 
             <Text style={homeStyles.title}>TEMPO DEV</Text>
-            <Text style={homeStyles.subtitle}>App de previsão do tempo</Text>
+            <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
 
             <Text>clique aqui !</Text>
 
