@@ -1,4 +1,4 @@
-import { View, Text, TouchableOpacity, StatusBar } from 'react-native';
+import { View, Text, TouchableOpacity, StatusBar, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function App() {
@@ -18,4 +18,6 @@ export default function App() {
 
 }
 
-const styles = StyleSheet
+const styles = StyleSheet.create({
+
+});
