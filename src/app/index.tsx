@@ -5,7 +5,8 @@ export default function App() {
 
 
     return (
-        <SafeAreaView>
+        
+        <SafeAreaView style={styles.container}>
             <StatusBar barStyle="dark-content"/>
             <Text>OLA, APP!</Text>
             <TouchableOpacity onPress={() => alert("clicado")}
@@ -19,5 +20,11 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-
+    container : {
+        flex: 1,    
+        backgroundColor: '#000',
+        alignItems: 'center',
+        padding: 20,
+        justifyContent: 'center',
+    }
 });
