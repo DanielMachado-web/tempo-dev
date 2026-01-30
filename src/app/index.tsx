@@ -28,10 +28,11 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
     },
 
-    title :{
+    title : {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#ffff',
+        marginBottom: 20,
 
     }
 });
