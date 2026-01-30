@@ -42,7 +42,7 @@ export const homeStyles = StyleSheet.create({
         marginTop: spacing.xs,
     },
 
-    
+
 
 
 });
