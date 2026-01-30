@@ -39,8 +39,10 @@ export const homeStyles = StyleSheet.create({
         ...typography.subtitle,
         color: colors.textSecondary,
         textAlign: 'center',
-        marginTop: spacing.sm,
+        marginTop: spacing.xs,
     },
+
+    
 
 
 });
