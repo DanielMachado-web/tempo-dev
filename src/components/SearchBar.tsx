@@ -15,7 +15,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     const [searchText, setSearchText] = useState('');
 
     const handleSearch = () => {
-        console.log( searchText);        
+        console.log(searchText);
     }
     return (
 
@@ -23,6 +23,10 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
             <View>
                 <TextInput
                     placeholder="Digite o nome da cidade"
+                    autoCapitalize="words"
+                    autoCorrect={false}
+                    editable={!loading}
+                    onSubmitEditing={() => handleSearch()}
                     value={searchText}
                     onChangeText={setSearchText}
                     placeholderTextColor="#999"
@@ -36,15 +40,9 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                         marginBottom: 10,
                     }}
 
-                 
-                    autoCapitalize="words"
-                    autoCorrect={false}
-                    editable={!loading}
-                    onSubmitEditing={() => {
-                        if (onSearch && !loading) {
-                            onSearch(searchText);
-                        }
-                    }}
+
+                    
+
                 />
             </View>
         </View>
