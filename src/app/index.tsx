@@ -5,6 +5,7 @@ import SearchBar from '../components/SearchBar';
 
 
 
+
 export default function App() {
 
 
@@ -36,6 +37,7 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
+
     container: {
         flex: 1,
         backgroundColor: '#000',
@@ -55,7 +57,7 @@ const styles = StyleSheet.create({
     button: {
         backgroundColor: 'white',
         padding: 10,
-        marginTop: 30,
+        marginTop: 50,
         borderRadius: 5,
         alignItems: 'center',
         justifyContent: 'center',
