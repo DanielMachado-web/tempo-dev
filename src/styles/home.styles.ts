@@ -1,5 +1,6 @@
 import {StyleSheet} from 'react-native';
 import { colors, spacing, typography} from './colors';
+import { matchForEmptyPath } from 'expo-router/build/fork/getStateFromPath-forks';
 
 export const homeStyles = StyleSheet.create({
 
@@ -40,6 +41,19 @@ export const homeStyles = StyleSheet.create({
         color: colors.textSecondary,
         textAlign: 'center',
         marginTop: spacing.xs,
+    },
+
+    emptyContainer: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+
+    emptyText: {
+        ...typography.body,
+        color: colors.textSecondary,
+        textAlign: 'center',
+        marginTop: spacing.sm,
     },
 
 
