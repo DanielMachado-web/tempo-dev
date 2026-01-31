@@ -15,10 +15,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     const [searchText, setSearchText] = useState('');
 
     const handleSearch = () => {
-        console.log('Searching for city:', searchText);
-        if (onSearch) {
-            onSearch(searchText);
-        }
+        console.log( searchText);        
     }
     return (
 
