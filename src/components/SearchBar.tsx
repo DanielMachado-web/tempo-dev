@@ -33,8 +33,10 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                         marginBottom: 10,
                     }}
 
+                    returnKeyType='done'
                     autoCapitalize="words"
                     autoCorrect={false}
+                    editable={!loading}
                     onSubmitEditing={() => {
                         if (onSearch && !loading) {
                             onSearch(searchText);
