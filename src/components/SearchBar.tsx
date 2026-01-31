@@ -1,5 +1,5 @@
-import  { useState } from 'react';
-import { View,  TextInput } from 'react-native';
+import { useState } from 'react';
+import { View, TextInput } from 'react-native';
 
 interface SearchBarProps {
 
@@ -12,17 +12,35 @@ interface SearchBarProps {
 
 export default function SearchBar({ onSearch, loading = false }: SearchBarProps) {
 
-const [searchText, setSearchText] = useState('');
+    const [searchText, setSearchText] = useState('');
 
     return (
- 
+
         <View>
             <View>
-                <TextInput 
-                placeholder="Digite o nome da cidade" 
-                value={searchText}
-                onChangeText={setSearchText}
-                style={{ borderWidth: 1, borderColor: '#000', padding: 5, borderRadius: 5 }} />
+                <TextInput
+                    placeholder="Digite o nome da cidade"
+                    value={searchText}
+                    onChangeText={setSearchText}
+                    placeholderTextColor="#999"
+                    style={{
+                        backgroundColor: '#fff',
+                        borderRadius: 5,
+                        paddingHorizontal: 10,
+                        paddingVertical: 5,
+                        fontSize: 16,
+                        color: '#333',
+                        marginBottom: 10,
+                    }}
+
+                    autoCapitalize="words"
+                    autoCorrect={false}
+                    onSubmitEditing={() => {
+                        if (onSearch && !loading) {
+                            onSearch(searchText);
+                        }
+                    }}
+                />
             </View>
         </View>
     );
