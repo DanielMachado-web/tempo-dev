@@ -42,7 +42,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
 
                 />
 
-                <TouchableOpacity onPress={handleSearch}>
+                <TouchableOpacity onPress={handleSearch} disabled={loading}>
                     <Text>{loading ? 'Carregando...' : 'Buscar'}</Text>
                 </TouchableOpacity>
             </View>
