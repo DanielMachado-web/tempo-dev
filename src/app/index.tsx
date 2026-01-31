@@ -1,6 +1,7 @@
-import { View, Text, StatusBar, StyleSheet, ScrollView } from 'react-native';
+import { View, Text, StatusBar, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { homeStyles } from '../styles/home.styles';
+
 
 
 export default function App() {
