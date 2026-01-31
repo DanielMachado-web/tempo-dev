@@ -14,6 +14,12 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
 
     const [searchText, setSearchText] = useState('');
 
+    const handleSearch = () => {
+        console.log('Searching for city:', searchText);
+        if (onSearch) {
+            onSearch(searchText);
+        }
+    }
     return (
 
         <View>
@@ -33,7 +39,7 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                         marginBottom: 10,
                     }}
 
-                    returnKeyType='done'
+                 
                     autoCapitalize="words"
                     autoCorrect={false}
                     editable={!loading}
