@@ -47,13 +47,14 @@ export const homeStyles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
+        padding: spacing.xl
     },
 
     emptyText: {
         ...typography.body,
-        color: colors.textSecondary,
+        color: colors.textLight,
         textAlign: 'center',
-        marginTop: spacing.sm,
+       
     },
 
 
