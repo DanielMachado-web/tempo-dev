@@ -10,6 +10,9 @@ interface SearchBarProps {
 
 
 export default function SearchBar({ onSearch, loading = false }: SearchBarProps) {
+
+const [cityName, setCityName] = React.useState('');
+
     return (
 
         <View>
