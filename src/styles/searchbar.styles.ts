@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native';
+import { Button, StyleSheet } from 'react-native';
 import { colors, spacing, typography } from './colors';
 
 export const searchBarStyles = StyleSheet.create({
@@ -35,5 +35,10 @@ export const searchBarStyles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-
+    
+    buttonText: {
+        color: colors.cardBackground,
+        fontSize: 16,
+        fontWeight: '600'
+    }
 })
