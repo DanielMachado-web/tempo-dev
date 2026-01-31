@@ -1,8 +1,8 @@
-import { View, Text, TextInput } from 'react-native';
+import { View,  TextInput } from 'react-native';
 
 interface SearchBarProps {
 
-    onSearch: (cityNamery: string) => void;
+    onSearch: (cityName: string) => void;
     loading: boolean;
 
 }
