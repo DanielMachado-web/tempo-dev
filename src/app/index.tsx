@@ -1,6 +1,7 @@
 import { View, Text, StatusBar, ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { homeStyles } from '../styles/home.styles';
+import SearchBar from '../components/SearchBar';
 
 
 
@@ -20,6 +21,8 @@ export default function App() {
                     <Text style={homeStyles.title}>TEMPO DEV</Text>
                     <Text style={homeStyles.subtitle}>Busque o clima em qualquer cidade</Text>
                 </View>
+
+                <SearchBar onSearch={() => { }} />
 
 
                 <View style={homeStyles.emptyContainer}>

@@ -3,8 +3,8 @@ import { View,  TextInput } from 'react-native';
 
 interface SearchBarProps {
 
-    onSearch: (cityName: string) => void;
-    loading: boolean;
+    onSearch?: (cityName: string) => void;
+    loading?: boolean;
 
 }
 
