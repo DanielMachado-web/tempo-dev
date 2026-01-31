@@ -4,27 +4,36 @@ import { colors, spacing, typography } from './colors';
 export const searchBarStyles = StyleSheet.create({
 
     container: {
+        padding: spacing.md
+    },
+
+    inputContainer: {
         flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        backgroundColor: colors.cardBackground,
-        borderRadius: 5,
-        paddingHorizontal: spacing.md,
-        paddingVertical: spacing.sm,
-        marginBottom: spacing.md,
+        gap: spacing.md
+
     },
 
     input: {
         flex: 1,
-        fontSize: typography.body.fontSize,
+        backgroundColor: colors.cardBackground,
+        borderRadius: 10,        
+        borderWidth: 1,
+        borderColor: colors.border,
+        paddingHorizontal: spacing.md,
+        paddingVertical: spacing.xs,
         color: colors.text,
-    },
+        fontSize: 16,
+       
+    },  
+
     button: {
         marginLeft: spacing.sm,
         paddingVertical: spacing.xs,
         paddingHorizontal: spacing.md,
         backgroundColor: colors.primary,
-        borderRadius: 5,        
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
 })
