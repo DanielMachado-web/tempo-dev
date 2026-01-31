@@ -22,7 +22,7 @@ const [searchText, setSearchText] = useState('');
                 placeholder="Digite o nome da cidade" 
                 value={searchText}
                 onChangeText={setSearchText}
-                style={{ borderWidth: 1, borderColor: '#000', padding: 10, borderRadius: 5 }} />
+                style={{ borderWidth: 1, borderColor: '#000', padding: 5, borderRadius: 5 }} />
             </View>
         </View>
     );
