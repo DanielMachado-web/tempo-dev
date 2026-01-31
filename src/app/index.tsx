@@ -21,8 +21,8 @@ export default function App() {
                 </View>
 
 
-                <View>
-                    <Text>Digite o nome de uma cidade</Text>
+                <View style={homeStyles.emptyContainer}>
+                    <Text style={homeStyles.emptyText}>Digite o nome de uma cidade</Text>
                 </View>
 
             </ScrollView>
