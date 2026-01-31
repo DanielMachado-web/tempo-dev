@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { View, TextInput } from 'react-native';
+import { View, TextInput, TouchableOpacity, Text } from 'react-native';
 
 interface SearchBarProps {
 
@@ -38,12 +38,13 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                         fontSize: 16,
                         color: '#333',
                         marginBottom: 10,
-                    }}
-
-
-                    
+                    }}                 
 
                 />
+
+                <TouchableOpacity onPress={handleSearch}>
+                    <Text>{loading ? 'Carregando...' : 'Buscar'}</Text>
+                </TouchableOpacity>
             </View>
         </View>
     );
