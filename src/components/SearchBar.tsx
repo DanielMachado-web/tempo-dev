@@ -1,4 +1,4 @@
-import React from 'react';
+import  { useState } from 'react';
 import { View,  TextInput } from 'react-native';
 
 interface SearchBarProps {
@@ -12,10 +12,10 @@ interface SearchBarProps {
 
 export default function SearchBar({ onSearch, loading = false }: SearchBarProps) {
 
-const [cityName, setCityName] = React.useState('');
+const [searchText, setSearchText] = useState('');
 
     return (
-
+ 
         <View>
             <View>
                 <TextInput placeholder="Digite o nome da cidade" style={{ borderWidth: 1, borderColor: '#000', padding: 10, borderRadius: 5 }} />
