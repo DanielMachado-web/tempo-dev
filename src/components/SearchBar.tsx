@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { View, TextInput, TouchableOpacity, Text } from 'react-native';
+import { searchBarStyles } from '../styles/searchbar.styles';
 
 interface SearchBarProps {
 
@@ -19,8 +20,8 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
     }
     return (
 
-        <View>
-            <View>
+        <View style={searchBarStyles.container}>
+            <View style={searchBarStyles.inputContainer}>
                 <TextInput
                     placeholder="Digite o nome da cidade"
                     autoCapitalize="words"
