@@ -31,20 +31,12 @@ export default function SearchBar({ onSearch, loading = false }: SearchBarProps)
                     value={searchText}
                     onChangeText={setSearchText}
                     placeholderTextColor="#999"
-                    style={{
-                        backgroundColor: '#fff',
-                        borderRadius: 5,
-                        paddingHorizontal: 10,
-                        paddingVertical: 5,
-                        fontSize: 16,
-                        color: '#333',
-                        marginBottom: 10,
-                    }}                 
-
+                    style={searchBarStyles.input}              
+                                    
                 />
 
-                <TouchableOpacity onPress={handleSearch} disabled={loading}>
-                    <Text>{loading ? 'Carregando...' : 'Buscar'}</Text>
+                <TouchableOpacity onPress={handleSearch} disabled={loading} style={searchBarStyles.button}>
+                    <Text style={searchBarStyles.buttonText}>{loading ? 'Carregando...' : 'Buscar'}</Text>
                 </TouchableOpacity>
             </View>
         </View>
